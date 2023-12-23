@@ -10,21 +10,27 @@
 #Пример использования На входе:
 #coins = [0, 1, 0, 1, 1, 0]
 #На выходе:3
-n= int(input("Введите количество монеток : "))
-from random import randint
+#coins = [0, 1, 0, 1, 1, 0]
+#from random import randint
 # монетки гербом вверх
-a = 0 
+#a = 1 
 # монетки решкой вверх
-b = 0
+#b = 0
 # генерируем последовательность чисел для цикла с помощью range
-for i in range(n):
-      coin = randint(0, 1)
-print(coin, end=' ')
-if coin > 0: a += 1
-else: b += 1
-print()
-if a > b:
-    print(f'Нужно перевернуть {b} монеток')
+#for i in range(n):
+  #    coin = randint(0, 1)
+#print(coin, end=' ')
+# if coins > 0: 
+    a += 1
+# else: b += 1
+# print()
+coins = [0, 1, 0, 1, 1, 0]
+count = 0
+for i in coins:
+  if i == 0:
+    count +=1
+if (len(coins)/2>count):
+    print(count)
 else:
-    print(f'Нужно перевернуть {a} монеток')
+    print(len(coins)-count)
 

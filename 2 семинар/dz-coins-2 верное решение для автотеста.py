@@ -1,7 +1,8 @@
 N = int(input('Введите количество монет '))
-orel = reshka = 0
+orel = 1
+reshka = 0
 for i in range(N):
-    x = int(input('Орел(1) или решка(0)? '))
+   # x = int(input('Орел(1) или решка(0)? '))
     if x == 1:
         orel += 1
     else:
