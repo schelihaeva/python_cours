@@ -4,3 +4,5 @@ abraFilter = filter(lambda x:10 <= abs(x) <=99, map(int,number.split()))
 
 result = ' '. join(map(str, abraFilter))
 print(result)
+
+print(list(filter(lambda x : len(str(abs(int(x)))) ==2, number.split())))
