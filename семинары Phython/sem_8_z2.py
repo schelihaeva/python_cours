@@ -6,3 +6,6 @@ result = ' '. join(map(str, abraFilter))
 print(result)
 
 print(list(filter(lambda x : len(str(abs(int(x)))) ==2, number.split())))
+
+
+print(list(filter(lambda x: len(x.replace("-",'')) == 2, number.split()))) # 2 способ
